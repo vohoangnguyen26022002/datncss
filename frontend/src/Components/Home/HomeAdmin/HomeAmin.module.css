@@ -1,0 +1,95 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Admin container styling */
+  .admin-container {
+    background: linear-gradient(135deg, #4B9CD3, #B0C9E3); /* Cool blue gradient */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  }
+  
+  /* Admin header styling */
+  .admin-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #774936; /* Dark brown */
+    padding: 15px 0;
+    margin-bottom: 20px;
+  }
+  
+  /* Navigation button styling */
+  .admin-header nav button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 0 10px;
+  }
+  
+  .admin-header nav button:hover,
+  .admin-header nav button.active {
+    background-color: #E07A5F; /* Terracotta color */
+    border-radius: 5px;
+  }
+  
+  /* Main content area */
+  .admin-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .admin-container {
+      padding: 10px;
+    }
+  
+    .admin-header {
+      padding: 10px 0;
+    }
+  
+    .admin-content {
+      margin: 0 10px;
+      padding: 15px;
+    }
+  
+    .admin-header nav button {
+      font-size: 1rem;
+      padding: 8px 15px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .admin-container {
+      padding: 10px;
+    }
+  
+    .admin-content {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  
